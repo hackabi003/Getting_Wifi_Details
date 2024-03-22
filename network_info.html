@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .ip-address {
+            color: #28a745; /* Green color for IP address */
+        }
+        .mac-address {
+            color: #dc3545; /* Red color for MAC address */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Network Info</h1>
+        <p>IP Address: <span class="ip-address">{{ network_info['IP Address'] }}</span></p>
+        <p>MAC Address: <span class="mac-address">{{ network_info['MAC Address'] }}</span></p>
+    </div>
+</body>
+</html>
+
